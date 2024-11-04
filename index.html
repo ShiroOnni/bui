@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site</title>
-    <style>
-        body {
-            background-image: url('1xbet (1).png'); /* Remplace par le nom de ton image */
-            background-size: cover; /* Pour couvrir tout l'écran */
-            background-position: center; /* Centrer l'image */
-            color: white; /* Change la couleur du texte pour le rendre lisible */
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0; /* Pour enlever les marges par défaut */
-            height: 100vh; /* Pour prendre toute la hauteur de la fenêtre */
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>Enveloppe avec Lettre</title>
 </head>
 <body>
-
+    <div class="container">
+        <div class="envelope" onclick="showLetter()">
+            📬
+        </div>
+        <div class="letter" id="letter">
+            <h2>À ma précieuse femme,</h2>
+            <p>Mon amour,</p>
+            <p>Je tiens à te présenter mes plus sincères excuses pour ce qui s'est passé hier et pour les jours précédents. Je réalise que je ne prends pas toujours conscience de ce que je te fais subir, et je veux que tu saches à quel point je te suis reconnaissant pour tout ce que tu fais pour moi.</p>
+            <p>Merci d'être la femme extraordinaire que tu es. Merci de m'aider dans mon quotidien, de rire avec moi et, tout simplement, d'être ma moitié. Tu es une moitié que je n'oublierai jamais, et je veux que tu saches que tu resteras toujours avec moi.</p>
+            <p>Je tiens également à parler de ta beauté. Arrête de croire que tu n'es pas belle, parce que tu es une merveille qui dépasse toutes les galaxies. Je pourrais te qualifier de divine, et je suis désolé de ne pas toujours le montrer.</p>
+            <p>Je te demande pardon pour mon comportement récent. Ce que j'ai dit hier n'était pas dirigé contre toi. En ce moment, je traverse des difficultés, et je sais que cela affecte notre relation. J'espère que tu pourras me pardonner, car je ne réalise pas toujours l'impact de mes mots et de mes actions.</p>
+            <p>Je t'aime profondément et je veux travailler sur nous. Pardon, ma femme, pour tout le mal que je t'ai fait.</p>
+            <p>Avec tout mon amour,</p>
+            <p>Ton mari d'amour</p>
+            <button onclick="hideLetter(event)">Fermer</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

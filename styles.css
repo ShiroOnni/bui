@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* Largeur maximale pour la lettre */
+    padding: 20px;
+}
+
+.envelope {
+    cursor: pointer;
+    font-size: 50px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.envelope:hover {
+    transform: scale(1.1);
+}
+
+.letter {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%; /* S'adapte à la largeur du conteneur */
+    background-color: #ffccff; /* Couleur rose pour la lettre */
+    border: 1px solid #ff99cc;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    overflow: hidden;
+    border-radius: 10px; /* Arrondir les coins */
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Le bouton prend toute la largeur */
+}
+
+button:hover {
+    background-color: #ff4d4d;
+}
+
+/* Styles responsive */
+@media (max-width: 600px) {
+    .envelope {
+        font-size: 40px; /* Réduire la taille de l'enveloppe sur les petits écrans */
+    }
+
+    .letter {
+        padding: 15px; /* Réduire le padding sur les petits écrans */
+    }
+
+    h2 {
+        font-size: 18px; /* Réduire la taille du titre */
+    }
+}
